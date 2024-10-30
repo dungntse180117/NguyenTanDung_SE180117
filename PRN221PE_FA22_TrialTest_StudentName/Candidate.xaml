@@ -1,0 +1,38 @@
+﻿<Window x:Class="PRN221PE_FA22_TrialTest_StudentName_.Candidate"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PRN221PE_FA22_TrialTest_StudentName_"
+        mc:Ignorable="d"
+        Title="Candidate" Height="531" Width="800" Loaded="Window_Loaded_1">
+    <Grid Background="#FF3A76E6">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="74*"/>
+            <ColumnDefinition Width="40*"/>
+            <ColumnDefinition Width="5*"/>
+            <ColumnDefinition Width="575*"/>
+            <ColumnDefinition Width="106*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Koi Staffs Profile Management" HorizontalAlignment="Left" Margin="111,10,0,0" VerticalAlignment="Top" FontSize="24" Grid.Column="3"/>
+        <Label Content="Candidate ID" HorizontalAlignment="Left" Margin="37,79,0,0" VerticalAlignment="Top" Grid.ColumnSpan="3"/>
+        <Label Content="Full Name" HorizontalAlignment="Left" Margin="37,110,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+        <Label Content="ImageURL" HorizontalAlignment="Left" Margin="37,141,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+        <Label Content="BirthDay" HorizontalAlignment="Left" Margin="37,172,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="txtCandidateID" HorizontalAlignment="Left" Margin="24,83,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="298" Grid.Column="3"/>
+        <TextBox x:Name="txtName" HorizontalAlignment="Left" Margin="24,114,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="298" Grid.Column="3"/>
+        <TextBox x:Name="txtURL" HorizontalAlignment="Left" Margin="24,145,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="298" Grid.Column="3"/>
+        <DatePicker x:Name="birthDate" HorizontalAlignment="Left" Margin="24,174,0,0" VerticalAlignment="Top" Width="189" Grid.Column="3"/>
+        <Label Content="Job Posting" HorizontalAlignment="Left" Margin="361,78,0,0" VerticalAlignment="Top" Grid.Column="3"/>
+        <Label Content="Description&#xD;&#xA;" HorizontalAlignment="Left" Margin="361,118,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.192,0.067" Grid.Column="3"/>
+        <TextBox x:Name="txtDes" HorizontalAlignment="Left" Margin="363,154,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="298" Height="63" Grid.Column="3" Grid.ColumnSpan="2"/>
+        <DataGrid x:Name="dataProfile" AutoGenerateColumns="True" SelectionChanged="dataProfile_SelectionChanged" IsSynchronizedWithCurrentItem="True" Grid.ColumnSpan="5" Margin="0,222,10,92" />
+        <Button x:Name="BtnAdd" Content="Add" HorizontalAlignment="Left" Margin="37,447,0,0" VerticalAlignment="Top" Height="53" Width="81" Background="#FF08E22D" Grid.ColumnSpan="3" Click="BtnAdd_Click"/>
+        <Button x:Name="btnUpdate" Content="Update" HorizontalAlignment="Left" Margin="78,447,0,0" VerticalAlignment="Top" Height="53" Width="81" Background="#FF7DDD91" Grid.Column="3" Click="btnUpdate_Click_1"/>
+        <Button x:Name="BtnDel" Content="Delete" HorizontalAlignment="Left" Margin="404,447,0,0" VerticalAlignment="Top" Height="53" Width="80" Background="#FFE86704" Grid.Column="3"/>
+        <Button x:Name="BtnClose" Content="Close" HorizontalAlignment="Left" Margin="560,447,0,0" VerticalAlignment="Top" Height="53" Width="80" Background="#FF1DE3DC" Grid.Column="3" Click="BtnClose_Click" Grid.ColumnSpan="2"/>
+        <ComboBox x:Name="cmbJobPosting" Grid.Column="3" HorizontalAlignment="Left" Margin="437,83,0,0" VerticalAlignment="Top" Width="224" Grid.ColumnSpan="2"/>
+        <Button Grid.Column="3" Content="Edit job" HorizontalAlignment="Left" Margin="242,447,0,0" VerticalAlignment="Top" Height="53" Width="80" Click="Button_Click" Background="#FFC68A8A"/>
+
+    </Grid>
+</Window>

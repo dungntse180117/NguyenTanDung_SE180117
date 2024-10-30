@@ -1,0 +1,19 @@
+﻿<Window x:Class="PRN221PE_FA22_TrialTest_StudentName_.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PRN221PE_FA22_TrialTest_StudentName_"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="352" Width="626" WindowStartupLocation="CenterScreen">
+    <Grid Background="#FF48984A">
+        <Label Content="Email" HorizontalAlignment="Left" Margin="81,77,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtEmail" HorizontalAlignment="Center" Margin="0,81,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="336"/>
+        <Label Content="Password" HorizontalAlignment="Left" Margin="81,137,0,0" VerticalAlignment="Top"/>
+        <PasswordBox x:Name="txtPass" HorizontalAlignment="Center" Margin="0,145,0,0" VerticalAlignment="Top" Width="336"/>
+        <Button x:Name="btnLog" Content="LOGIN" HorizontalAlignment="Left" Margin="73,238,0,0" VerticalAlignment="Top" Height="47" Width="128" Click="btnLog_Click" Background="#FF5366E6"/>
+        <Button x:Name="btnCancel" Content="CANCEL" HorizontalAlignment="Left" Margin="400,238,0,0" VerticalAlignment="Top" Height="47" Width="128" Click="btnCancel_Click" Background="#FFD21010"/>
+        <Label Content="Login " HorizontalAlignment="Center" Margin="0,21,0,0" VerticalAlignment="Top" FontSize="22"/>
+
+    </Grid>
+</Window>

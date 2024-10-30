@@ -1,0 +1,32 @@
+﻿<Window x:Class="PRN221PE_FA22_TrialTest_StudentName_.JobPosting"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PRN221PE_FA22_TrialTest_StudentName_"
+        mc:Ignorable="d"
+        Title="JobPosting" Height="450" Width="800">
+    <Grid Background="#FF5EDD93" Loaded="Load">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="97*"/>
+            <ColumnDefinition Width="627*"/>
+            <ColumnDefinition Width="76*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Koi Job " HorizontalAlignment="Center" Margin="0,31,0,0" VerticalAlignment="Top" FontSize="36" Grid.Column="1"/>
+        <Label Content="ProductID" HorizontalAlignment="Left" Margin="86,103,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+        <Label Content="Job Posting Title" HorizontalAlignment="Left" Margin="86,134,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+        <Label Content="Description" HorizontalAlignment="Left" Margin="86,165,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+        <Label Content="Post date" HorizontalAlignment="Left" Margin="86,229,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="ProductID_txt" HorizontalAlignment="Left" Margin="104,107,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="256" Grid.Column="1"/>
+        <TextBox x:Name="title_txt" HorizontalAlignment="Left" Margin="104,142,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="256" Grid.Column="1"/>
+        <TextBox x:Name="des_txt" HorizontalAlignment="Left" Margin="104,173,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="256" Height="53" Grid.Column="1"/>
+        <DatePicker x:Name="postDate" HorizontalAlignment="Left" Margin="104,231,0,0" VerticalAlignment="Top" Width="199" Grid.Column="1"/>
+        <DataGrid x:Name="dataJob" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,274,0,24" SelectionChanged="dataJob_SelectionChanged" Grid.ColumnSpan="3"/>
+        <Button x:Name="btnAdd" Content="Add" HorizontalAlignment="Left" Margin="432,103,0,0" VerticalAlignment="Top" Height="44" Width="61" Background="#FF8A89F7" Click="btnAdd_Click" Grid.Column="1"/>
+        <Button x:Name="btnUpdate" Content="Update" HorizontalAlignment="Left" Margin="540,102,0,0" VerticalAlignment="Top" Height="44" Width="61" Background="#FFC1D244" Click="btnUpdate_Click" Grid.Column="1"/>
+        <Button x:Name="btnDel" Content="Delete" HorizontalAlignment="Left" Margin="432,178,0,0" VerticalAlignment="Top" Height="44" Width="61" Background="#FFC50A0A" Click="btnDel_Click" Grid.Column="1"/>
+        <Button x:Name="btnClose" Content="Close" HorizontalAlignment="Left" Margin="540,178,0,0" VerticalAlignment="Top" Height="44" Width="61" Background="#FFB82DBA" Click="btnClose_Click" Grid.Column="1"/>
+        <Button Grid.Column="2" Content="Back" HorizontalAlignment="Left" Margin="0,100,0,0" VerticalAlignment="Top" Height="46" Width="53" Click="Button_Click"/>
+
+    </Grid>
+</Window>
